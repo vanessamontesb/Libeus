@@ -1,0 +1,58 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Elliot Watts",
+        "imgSrc": "https://randomuser.me/api/portraits/men/36.jpg"
+        
+      },
+      {
+        "id": 2,
+        "name": "Freddie Jenkins",
+        "imgSrc": "https://randomuser.me/api/portraits/men/53.jpg"
+     
+      },
+
+      {
+        "id": 3,
+        "name": "Amelia Lavoie",
+        "imgSrc": "https://randomuser.me/api/portraits/women/67.jpg"
+    
+      },
+      {
+        "id": 4,
+        "name": "Minea Hautala",
+        "imgSrc": "https://randomuser.me/api/portraits/women/96.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Felix Carroll",
+        "imgSrc": "https://randomuser.me/api/portraits/men/59.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Elmer Williams",
+        "imgSrc": "https://randomuser.me/api/portraits/men/21.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Mercedes Gomez",
+        "imgSrc": "https://randomuser.me/api/portraits/women/6.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Freja Moller",
+        "imgSrc": "https://randomuser.me/api/portraits/women/54.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Veera Huhta",
+        "imgSrc": "https://randomuser.me/api/portraits/women/79.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Adrian Serna",
+        "imgSrc": "https://randomuser.me/api/portraits/men/39.jpg"
+      }
+    ]
+}
