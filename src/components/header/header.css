@@ -1,0 +1,12 @@
+.Header{
+  text-align: center;
+}
+
+.App-Header {
+  background:#db252f;  
+  padding-left: 50px;
+  color:white;
+  height: 40px;
+  width: 100%;
+}
+
