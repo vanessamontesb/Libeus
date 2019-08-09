@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { API_URL } from "../../constants"
 import User from '../../components/home/user';
+import './user.css'
 
 
 
@@ -72,14 +73,18 @@ class UserList extends Component {
         return (
             <>
         <div className="searchBar">
+            <div className ="search"><i class="fas fa-search"></i></div>
             <div className="filterContainer">
+            
             <input 
                 onChange={(e) => this.handleTextChange(e, "filterText")}
                 placeholder="Search user"
                 className="filter-field"
                 type="text"
                 value={filterText}
+    
             />
+
             
             </div>
        

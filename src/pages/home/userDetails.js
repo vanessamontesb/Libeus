@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { API_URL } from "../../constants";
 import User from '../../components/home/user';
-
+import NavBar from '../../components/navBar/navBar'
 
 
 class UserDetails extends Component {
@@ -52,6 +52,7 @@ class UserDetails extends Component {
                 <div className ="UserInfoContainer">
                    <User imgSrc={imgSrc} name={name} />
                 </div>
+                <NavBar/>
             </div>
             </>
          );

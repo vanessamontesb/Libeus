@@ -1,0 +1,48 @@
+.filterContainer{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 24px;
+}
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:#e6e6e6;
+    border: none;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+    border-radius: 15px;
+    color:#4c5153;
+    font-style: italic;
+  }
+  input[type=text]:hover {
+    width:270px;
+  }
+  
+
+.search{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#dddfe0;
+    height: 60px;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 20px;
+   
+    
+}
