@@ -1,16 +1,18 @@
 import React from 'react';
-
+import './user.css'
 
 const User = ({imgSrc, name }) => {
     return (
         <>
         <figure className ="userFigure">
             <img className="userImg" src={imgSrc} alt="prize"/>
-            <h3 className="userFigcaptionName">{name} </h3>    
-            <figcaption className="prizeFigcaption"> <span role="img" aria-label="star"></span></figcaption>  
+            <div className="userFigcaption"> 
+             <h3 className="userFigcaptionName">{name} </h3>  
+            </div>  
         </figure>
         </>
     );
 }
+
  
 export default User;

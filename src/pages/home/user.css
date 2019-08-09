@@ -11,8 +11,8 @@ input[type=text] {
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 16px;
-    background-color:#e6e6e6;
-    border: none;
+    border:none;
+    background-color:#f1f1f1;
     padding: 12px 20px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -45,4 +45,29 @@ input[type=text] {
     padding-top: 20px;
    
     
+}
+
+.userGrid{
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 13px;
+  grid-template-columns: repeat(2, 450px);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  .userGrid{
+      margin-top: 10px;
+      display: grid;
+      justify-content: center;
+      grid-gap: 5px;
+      grid-template-columns: repeat(auto-fill, 200px);
+  }
+
+}
+
+.userFigcaption {
+  text-decoration: none;
 }

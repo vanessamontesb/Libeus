@@ -93,7 +93,7 @@ class UserList extends Component {
         <div className ="userGrid">
 
             {filteredUsers.map(({ id, imgSrc, name,})  => (
-                <Link  key={id} to={`/users/${id}`}>
+                <Link  className="userFigcaption" key={id} to={`/users/${id}`}>
                      <User imgSrc={imgSrc} name={name}  />
                 </Link>
             ))}
