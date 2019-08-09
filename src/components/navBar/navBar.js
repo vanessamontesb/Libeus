@@ -4,6 +4,7 @@ import  AppNavBar from '../../pages/navBar/appNavbar';
 class Navbar extends Component {
     render() {
         let links = [
+            {label:  '<< Users |', link:'/users'},
             { label: 'Following', link: '/users/:id/following' },
             { label: 'Followers', link: '/users/:id/followers' },
             { label: 'Find new friends', link: '/users/:id/newfriends' },

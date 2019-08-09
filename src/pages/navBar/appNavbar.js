@@ -31,6 +31,7 @@ class AppNavBar extends Component {
         });
 
         return (
+            <div className="nav-container">
             <nav className="menu">
 
             <div className="menu__right">
@@ -40,6 +41,7 @@ class AppNavBar extends Component {
                 </ul>
             </div>
             </nav>
+            </div>
         );
     }
 }

@@ -5,13 +5,14 @@
     align-items: center;
     border-radius: 15px;
     color:#db252f;
-    border-bottom: 6px solid #253746;
+    border-bottom: 6px solid #9e9c9c;;
  
 }
 
 
 .userFigure:hover{transform:scale(1.08);
-    filter: opacity(.9);
+    transition:all .5s ease-in-out;
+    filter: grayscale(80%);
 }
 .userFigure {overflow:hidden;}
 
@@ -24,11 +25,13 @@
     border-radius: 50%;
 }
 
-.userImg:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+.userImg:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);
+}
 .userFigcaptionName{
     flex: right;
     text-align: center;
     align-content: center;
     padding-left: 60px;
+    
 }
 

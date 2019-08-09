@@ -53,6 +53,11 @@ class UserDetails extends Component {
                    <User imgSrc={imgSrc} name={name} />
                 </div>
                 <NavBar/>
+                <div className= "message">
+                    <h3>
+                        Meet new peopple, new ideas and differents minds
+                    </h3>
+                </div>
             </div>
             </>
          );

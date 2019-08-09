@@ -22,8 +22,12 @@ input[type=text] {
     font-style: italic;
   }
   input[type=text]:hover {
+    transition:all .5s ease-in-out;
     width:270px;
+    background:white;
   }
+      
+  
   
 
 .search{
@@ -38,7 +42,7 @@ input[type=text] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#dddfe0;
+    color:#9e9c9c;
     height: 60px;
     width: 100%;
     flex-direction: column;
@@ -70,4 +74,41 @@ input[type=text] {
 
 .userFigcaption {
   text-decoration: none;
+}
+.UserInfoContainer{
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 13px;
+  grid-template-columns: repeat(1, 400px);
+}
+
+.UserInfoContainer figure {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex:start;
+}
+
+.UserInfoContainer div {
+  padding-right: 55px;
+}
+
+.UserInfoContainer figure:hover {
+  transform:scale(1);
+  filter:none;
+}
+
+.message{
+  background: white;
+  height: 100px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  width: 100%;
+  display:Flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 33%;
+  color:#db252f;
 }
