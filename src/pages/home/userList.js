@@ -35,7 +35,7 @@ class UserList extends Component {
 
 
     getUsers = () => {
-        axios.get(`${API_URL}users`)
+        axios.get(`${API_URL}/users`)
         .then(response => {
             this.setState({
                 users: {
@@ -57,18 +57,6 @@ class UserList extends Component {
 
     }
 
-    
-    createTextInput = (value, field) => (
-        <input className ="createPrizeInput"
-            required
-            type="text"
-            name={field}
-            placeholder={field}
-            onChange={(e) => this.handleInputChange(e.target.value, field)}
-            value={value}
-        />
-    )
-
     render() {
         const {
             users: {content, error},
@@ -83,7 +71,7 @@ class UserList extends Component {
 
         return (
             <>
-        <div className="searchBar-addButtonContainer">
+        <div className="searchBar">
             <div className="filterContainer">
             <input 
                 onChange={(e) => this.handleTextChange(e, "filterText")}
@@ -97,10 +85,10 @@ class UserList extends Component {
        
         </div>
 
-        <div className ="PrizeGrid">
+        <div className ="userGrid">
 
             {filteredUsers.map(({ id, imgSrc, name,})  => (
-                <Link  key={id} to={`users/${id}`}>
+                <Link  key={id} to={`/users/${id}`}>
                      <User imgSrc={imgSrc} name={name}  />
                 </Link>
             ))}
