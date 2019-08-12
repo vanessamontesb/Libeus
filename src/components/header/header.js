@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types'
+import React from 'react';
 import './header.css';
-import {Link} from 'react-router-dom'
+
 
 
 const Header =props =>{
@@ -9,7 +8,7 @@ const Header =props =>{
     <div>
             <header className="App-Header">
               
-               <p>{props.nameApp}</p>
+               <div>{props.nameApp}</div>
              
                
             </header>

@@ -3,8 +3,12 @@
       {
         "id": 1,
         "name": "Elliot Watts",
-        "imgSrc": "https://randomuser.me/api/portraits/men/36.jpg"
-        
+        "imgSrc": "https://randomuser.me/api/portraits/men/36.jpg",
+        "namesfollowing":["Freddie Jenkins","Amelia Lavoi"],
+        "idfollowing":["2","3"],
+        "namefollowers":["Freddie Jenkins","Amelia Lavoi"],
+        "idfollowers":["2","3"]
+    
       },
       {
         "id": 2,
@@ -54,6 +58,17 @@
         "name": "Adrian Serna",
         "imgSrc": "https://randomuser.me/api/portraits/men/39.jpg"
       }
-    ]
+    ],
+    "following": [
+      {
+        "id": 1,
+        "name": "Elliot Watts",
+        "imgSrc": "https://randomuser.me/api/portraits/men/36.jpg",
+        "namesfollowing":["Freddie Jenkins","Amelia Lavoi"],
+        "idfollowing":["2","3"],
+        "namefollowers":["Freddie Jenkins","Amelia Lavoi"],
+        "idfollowers":["2","3"]
+    
+      }]
   
 }

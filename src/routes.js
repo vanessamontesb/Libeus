@@ -11,7 +11,7 @@ const AppRoutes = () =>
     <Switch>
         <Route exact path="/users" component={Home}/>
         <Route exact path="/users/:id" component={UserDetails} />
-        <Route exact path="/users/:id/following" component={Following} />
+        <Route exact path="/following/:id" component={Following} />
         <Route component={Page404}/>/>
     </Switch>
 </App>

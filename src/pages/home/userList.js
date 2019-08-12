@@ -104,7 +104,7 @@ class UserList extends Component {
         return (
             <>
         <div className="searchBar">
-            <div className ="search"><i class="fas fa-search"></i></div>
+            <div className ="search"><i className="fas fa-search"></i></div>
             <div className="filterContainer">
             
             <input 
