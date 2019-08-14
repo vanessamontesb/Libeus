@@ -6,7 +6,7 @@ import User from '../../components/home/user';
 import { Link } from 'react-router-dom';
 
 
-class Following extends Component {
+class Followers extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,17 +14,17 @@ class Following extends Component {
             userInfo: {
                 name: "",
                 imgSrc: "",
-                namesfollowing:[]
+                namesfollowers:[]
 
             },
             error: '',
-           
+          
         }
     }
 
     componentDidMount = () => {
         const { match: { params: { id } } } = this.props;
-        axios.get(`${API_URL}/following/${id}`)
+        axios.get(`${API_URL}/followers/${id}`)
         .then(response => {
             this.setState({
                 userInfo: response.data,
@@ -36,40 +36,42 @@ class Following extends Component {
                 error: error.message
             })
         })
-
-        
-
     }
+
+
 
     render() { 
         const {
             userInfo: {
                 name,
                 imgSrc,
-                namesfollowing,
+                namesfollowers,
                 id
                 
-            }
+            },
+           
         } = this.state;
      
-        const namesfollowingt = namesfollowing.map(names=> {return( <li>{names}<button >Unfollow</button></li>
-        )
+      
+        const namesfollowerst = namesfollowers.map(names => {return( <li>{names}</li>)  
          })
-        
+
+    
      
 
         return ( 
             <>
             <div className ="UserDetailsContainer">
-                <Link  className="userFigcaption" key={id} to={`/users/${id}`}>
-                            <div key={id}> back|</div>
+                <Link  className="userFigcaption"  to={`/users/${id}`}>
+                        <div> back|</div>
                 </Link>
                 <div className ="UserInfoContainer">
-                   <User imgSrc={imgSrc} name={name} title="Following" />
+                   <User imgSrc={imgSrc} name={name} title="Followers" />
                 </div>
                 <ul>
-                    {namesfollowingt}
+                    {namesfollowerst}
                 </ul>
+               
                
               
             </div>
@@ -78,4 +80,4 @@ class Following extends Component {
     }
 }
  
-export default Following;
+export default Followers;

@@ -21,7 +21,7 @@ class UserDetails extends Component {
 
     componentDidMount = () => {
         const { match: { params: { id } } } = this.props;
-        axios.get(`${API_URL}/users/${id}`)
+        axios.get(`${API_URL}/following/${id}`)
         .then(response => {
             this.setState({
                 userInfo: response.data,
@@ -56,16 +56,16 @@ class UserDetails extends Component {
                 </div>
                 <div className="nav-container">
                     <div className="menu">
-                        <Link  className="userFigcaption" key={id} to={`/users`}>
+                        <Link  className="userFigcaption" key={id} to={`/`}>
                             <div key={id}> back|</div>
                         </Link>
-                        <Link  className="userFigcaption" key={id} to={`/following/${id}`}>
+                        <Link  className="userFigcaption"  to={`/following/${id}`}>
                             <div key={id}> Following</div>
                         </Link>
-                        <Link  className="userFigcaption" key={id} to={`/followers/${id}`}>
+                        <Link  className="userFigcaption"  to={`/followers/${id}`}>
                             <div key={id}>Followers</div>
                         </Link>
-                        <Link  className="userFigcaption" key={id} to={`/newfriends/${id}`}>
+                        <Link  className="userFigcaption" to={`/newfriends/${id}`}>
                             <div key={id}>newfriends</div>
                         </Link>
                     </div>

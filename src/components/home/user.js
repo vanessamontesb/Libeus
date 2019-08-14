@@ -1,8 +1,7 @@
 import React from 'react';
 import './user.css'
-import Header from '../header/header';
 
-const User = ({imgSrc, name, namesfollowers,title}) => {
+const User = ({imgSrc, name,title}) => {
     return (
         <>
         <figure className ="userFigure">
@@ -14,10 +13,6 @@ const User = ({imgSrc, name, namesfollowers,title}) => {
         <header>
              {title}
         </header>
-        <div>
-            
-            {namesfollowers}
-        </div>
         </>
     );
 }
