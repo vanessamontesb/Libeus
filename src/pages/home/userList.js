@@ -17,7 +17,7 @@ class UserList extends Component {
             },
             filterText: "",
             currentPage: 1,
-            todosPerPage: 5
+            todosPerPage: 10
         }
 
         this.handleClick = this.handleClick.bind(this);

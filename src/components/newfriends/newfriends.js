@@ -20,7 +20,7 @@ class NewFriends extends Component {
             error: '',
             filterText: "",
             currentPage: 1,
-            todosPerPage: 5
+            todosPerPage: 8
         }
    
         this.handleClick = this.handleClick.bind(this);
@@ -124,9 +124,9 @@ class NewFriends extends Component {
                        <div className="generalContainer">
                         <ul className="followingContainer">
                         <li className="following">{names}
-                        <div>
-                        <a className="button" >Unfollow|</a>
-                        <a className="button" >Follow</a>
+                        <div className="buttonsContainer">
+                        <div className="button" >Unfollow|</div>
+                        <div className="button" >Follow</div>
                         </div>
                         
                         </li>
