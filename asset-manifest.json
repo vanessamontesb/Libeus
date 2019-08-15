@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Libeus/static/css/main.9052b6cc.chunk.css",
+    "main.js": "/Libeus/static/js/main.ec1c9804.chunk.js",
+    "main.js.map": "/Libeus/static/js/main.ec1c9804.chunk.js.map",
+    "runtime~main.js": "/Libeus/static/js/runtime~main.fc116def.js",
+    "runtime~main.js.map": "/Libeus/static/js/runtime~main.fc116def.js.map",
+    "static/js/2.a25ed162.chunk.js": "/Libeus/static/js/2.a25ed162.chunk.js",
+    "static/js/2.a25ed162.chunk.js.map": "/Libeus/static/js/2.a25ed162.chunk.js.map",
+    "index.html": "/Libeus/index.html",
+    "precache-manifest.9458f94ce1b3ca0831575ea98594af0f.js": "/Libeus/precache-manifest.9458f94ce1b3ca0831575ea98594af0f.js",
+    "service-worker.js": "/Libeus/service-worker.js",
+    "static/css/main.9052b6cc.chunk.css.map": "/Libeus/static/css/main.9052b6cc.chunk.css.map"
+  }
+}
