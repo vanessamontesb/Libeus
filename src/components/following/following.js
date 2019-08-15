@@ -4,6 +4,7 @@ import axios from 'axios';
 import { API_URL } from "../../constants";
 import User from '../../components/home/user';
 import { Link } from 'react-router-dom';
+import './following.css'
 
 
 class Following extends Component {
@@ -52,7 +53,9 @@ class Following extends Component {
             }
         } = this.state;
      
-        const namesfollowingt = namesfollowing.map(names=> {return( <li>{names}<button >Unfollow</button></li>
+        const namesfollowingt = namesfollowing.map(names=> {return( 
+        <li className="following">{names}<div className="button" >Unfollow</div></li>
+        
         )
          })
         
@@ -62,12 +65,12 @@ class Following extends Component {
             <>
             <div className ="UserDetailsContainer">
                 <Link  className="userFigcaption" key={id} to={`/users/${id}`}>
-                            <div key={id}> back|</div>
+                            <div className="back" key={id}> <h3>back</h3></div>
                 </Link>
                 <div className ="UserInfoContainer">
-                   <User imgSrc={imgSrc} name={name} title="Following" />
+                   <User imgSrc={imgSrc} name={name} title ="Following" />
                 </div>
-                <ul>
+                <ul className="followingContainer">
                     {namesfollowingt}
                 </ul>
                

@@ -1,0 +1,46 @@
+.generalContainer{
+    display:flex;
+    padding-left: 41%;
+}
+
+.followingContainer{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    color: #7c7979;
+    flex-direction:column;
+    list-style:none;
+    
+
+};
+
+.following{
+flex:left;
+
+};
+
+.followingContainer div{
+flex:right;
+}
+
+.button:hover {
+    background-color:#db252f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.back{
+    padding-left:30px;
+    color:#db252f;
+}
+
+.back:hover{
+    color: #7c7979;
+}
+
+.generalContainerFollowers{
+    display:flex;
+    padding-left: 43%;
+}

@@ -10,8 +10,8 @@ const User = ({imgSrc, name,title}) => {
              <h3 className="userFigcaptionName">{name} </h3>  
             </div> 
         </figure>
-        <header>
-             {title}
+        <header className ="header">
+             <h2>{title}</h2>
         </header>
         </>
     );

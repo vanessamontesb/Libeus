@@ -1,9 +1,9 @@
-
 import React, { Component } from 'react';
 import axios from 'axios';
 import { API_URL } from "../../constants";
 import User from '../../components/home/user';
 import { Link } from 'react-router-dom';
+import '../following/following.css'
 
 
 class Followers extends Component {
@@ -18,7 +18,7 @@ class Followers extends Component {
 
             },
             error: '',
-          
+           
         }
     }
 
@@ -36,9 +36,10 @@ class Followers extends Component {
                 error: error.message
             })
         })
+
+        
+
     }
-
-
 
     render() { 
         const {
@@ -48,30 +49,31 @@ class Followers extends Component {
                 namesfollowers,
                 id
                 
-            },
-           
+            }
         } = this.state;
      
-      
-        const namesfollowerst = namesfollowers.map(names => {return( <li>{names}</li>)  
+        const namesfollowerst = namesfollowers.map(names=> {return( <div>
+        <li className="following">{names}</li>
+        </div>
+        )
          })
-
-    
+        
      
 
         return ( 
             <>
             <div className ="UserDetailsContainer">
-                <Link  className="userFigcaption"  to={`/users/${id}`}>
-                        <div> back|</div>
+                <Link  className="userFigcaption" key={id} to={`/users/${id}`}>
+                            <div className="back" key={id}> <h3>back</h3></div>
                 </Link>
                 <div className ="UserInfoContainer">
-                   <User imgSrc={imgSrc} name={name} title="Followers" />
+                   <User imgSrc={imgSrc} name={name} title ="Followers" />
                 </div>
-                <ul>
+                <div className="generalContainerFollowers">
+                <ul className="followingContainer">
                     {namesfollowerst}
                 </ul>
-               
+                </div>
                
               
             </div>

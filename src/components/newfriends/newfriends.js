@@ -3,6 +3,7 @@ import axios from 'axios';
 import { API_URL } from "../../constants";
 import { Link } from 'react-router-dom';
 import '../../pages/home/user.css'
+import '../following/following.css'
 
 
 class NewFriends extends Component {
@@ -96,10 +97,11 @@ class NewFriends extends Component {
             <>
             <div className ="UserDetailsContainer">
                 <Link  className="userFigcaption" key={id} to={`/users/${id}`}>
-                        <div key={id}> back|</div>
+                    <div className="back" key={id}> <h3>back</h3></div>
                 </Link>
-
-                {name}
+                <header className ="header">
+                     <h2>{name}</h2>
+                 </header>
                 <div className="searchBar">
                     <div className ="search"><i className="fas fa-search"></i>
                     </div>
@@ -119,12 +121,17 @@ class NewFriends extends Component {
                
                 <ul>
                     {currentTodos.map(names => {return( 
+                       <div className="generalContainer">
+                        <ul className="followingContainer">
+                        <li className="following">{names}
+                        <div>
+                        <a className="button" >Unfollow|</a>
+                        <a className="button" >Follow</a>
+                        </div>
                         
-                        <li>{names}
-                            
-                            <button>Follow</button>
-                            <button>Unfollow</button>
                         </li>
+                        </ul>
+                       </div> 
                       
                     )})}
                 </ul>
